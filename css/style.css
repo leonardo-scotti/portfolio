@@ -141,18 +141,42 @@ menu a {
 
 @media screen and (max-width: 418px) {
     * {
-        font-size: 6px;
+        font-size: 12px;
+    }
+    .container-sobre {
+        flex-direction: column;
+        padding: 0 3.75rem;
+    }
+    .text-sobre {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .text-sobre h1 {
+        width: 30rem;
+        margin-top: 5rem;
+        text-align: center;
+        align-self: center;
+    }
+    .text-sobre p {
+        font-size: 1rem;
+        width: 30rem;
+    }
+    .dev-img {
+        left: 5rem;
+        align-self: center;
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     * {
         font-size: 10px;
     }
     .container-sobre {
         flex-direction: column;
         padding: 0 3.75rem;
-        border: 1px solid red;
     }
     .text-sobre {
         width: 100%;
@@ -229,7 +253,6 @@ main {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    border: 1px solid red;
 }
 
 .skill {
@@ -258,7 +281,6 @@ main {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    border: 1px solid red;
 }
 
 .project {
@@ -301,7 +323,6 @@ main {
 #projetos,
 #skills {
     margin: var(--100px) 0;
-    border: 1px solid blue;
 }
 
 footer {
