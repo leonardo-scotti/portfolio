@@ -275,11 +275,10 @@ main {
 }
 
 .container-projects {
-    width: 100%;
+    width: 70%;
     height: auto-fit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
