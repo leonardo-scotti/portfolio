@@ -168,6 +168,9 @@ menu a {
         left: 5rem;
         align-self: center;
     }
+    .container-projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (max-width: 400px) {
