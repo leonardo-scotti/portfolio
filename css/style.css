@@ -170,6 +170,7 @@ menu a {
     }
     .container-projects {
         grid-template-columns: repeat(2, 1fr);
+        flex-wrap: wrap;
     }
 }
 
