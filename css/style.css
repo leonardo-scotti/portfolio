@@ -225,6 +225,8 @@ main {
 
 .text-sobre {
     width: 34.375rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .text-sobre h1 {
@@ -240,8 +242,10 @@ main {
 }
 
 .text-sobre a {
+    align-self: center;
     margin-top: 1rem;
     font-weight: 700;
+    font-size: 1.5rem;
     background-color: #4299e1;
     color: #fafafa;
     padding: var(--5px);
