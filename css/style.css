@@ -81,8 +81,13 @@ menu {
 }
 
 menu a {
+    height: 100%;
     font-weight: 600;
     color: #143b64;
+}
+
+menu a:hover {
+    border-bottom: 1px solid var(--cor-primaria);
 }
 
 .btn-mobile {
@@ -225,6 +230,7 @@ main {
 .text-sobre {
     width: 34.375rem;
     display: flex;
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -238,6 +244,10 @@ main {
 .text-sobre p {
     font-size: 1.23rem;
     margin-bottom: 2rem;
+}
+
+.text-sobre p span {
+    font-weight: bolder;
 }
 
 .text-sobre a {
