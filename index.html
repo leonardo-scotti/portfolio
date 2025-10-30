@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,6 @@
             <div class="logo">
                 LS
             </div>
-
             <div class="btn-mobile" id="btn-mobile" onclick="toggleMenu()">
                 <button class="icon"><img src="assets/menu_white_36dp.svg" alt=""></button>
             </div>
@@ -26,9 +25,7 @@
                 <a href="#contato">Contato</a>
             </menu>
         </nav>
-    </header>
-    <main>
-        <section id="sobre" class="container-sobre fade-in">
+        <div class="container-sobre">
             <div class="text-sobre">
                 <h1>Olá, me chamo Leonardo Scotti </h1>
                 <p>Sou estudante do curso Técnico em Desenvolvimento de Sistemas pelo SENAI, com foco em <span>Back-end</span>, utilizando <span>Node.js</span> e <span>MySQL</span>.<br> Tenho interesse em criar soluções eficientes e seguras, explorando boas
@@ -41,19 +38,21 @@
                     <img src="assets/dev.png" alt="Imagem de Desenvolvedor">
                 </picture>
             </div>
-        </section>
+        </div>
+    </header>
+    <main>
         <section id="skills" class=" container fade-in">
             <h2>Skills</h2>
             <div class="container-skills">
                 <div class="skill">
                     <div class="icon">&#128187;</div>
-                    <h3>Front-end</h3>
-                    <p>HTML, CSS e JavaScript.</p>
+                    <h3>Back-end</h3>
+                    <p>API Restful, Node.js, PHP, MySQL</p>
                 </div>
                 <div class="skill">
                     <div class="icon">&#128295;</div>
-                    <h3>Back-end</h3>
-                    <p>PHP, Java e SQL.</p>
+                    <h3>Front-end</h3>
+                    <p>HTML5, CSS, TailWind CSS, JavaScript</p>
                 </div>
                 <!-- <div class="skill">
                     <div class="icon">&#128202;</div>
@@ -70,28 +69,53 @@
         <section id="projetos" class="fade-in">
             <h2>Projetos</h2>
             <div class="container-projects">
-                <a href='https://github.com/Leonardo-Scotti/tcc-front-end' class="project">
-                    <h3>TCC de Front-end</h3>
-                    <p>Projeto feito com inspiração em um site já existente, maior projeto que já criei do zero e utilizei o mesmo para meu TCC.</p>
+                <a href='https://github.com/Leonardo-Scotti/pback-api_whatsapp' class="project" target="_blank">
+                    <h3>API WhatsApp - Node.js</h3>
+                    <p>Essa API pública, feita em Node.js, aceita somente o verbo GET, que simula o WhatsApp. Dentre as funcionalidades da API estão:
+                        <ul>
+                            <li>Listar todos os dados disponíveis na API;</li>
+                            <li>Consultar informações de um usuário específico;</li>
+                            <li>Listar contatos salvos por um usuário</li>
+                            <li>Ver todas as mensagens enviadas e recebidas por um usuário</li>
+                            <li>Listar mensagens trocadas entre dois números específicos</li>
+                            <li>Buscar mensagens por palavra-chave</li>
+                        </ul>
+                    </p>
                     <div>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>JSON</span>
                     </div>
                 </a>
-                <a href='https://github.com/Leonardo-Scotti/landing-page' class="project">
-                    <h3>Landing Page</h3>
-                    <p>Com inspiração em um personagem fictício, essa landing page foi criada a fim de treinar e aperfeiçoar minhas técnicas de:</p>
+                <a href='https://github.com/Leonardo-Scotti/pback-api_movies' class="project" target="_blank">
+                    <h3>API locadora de filmes - Node.js</h3>
+                    <p>Esta API, feita em Node.js, aceita diversos verbos, sendo eles: GET, POST, PUT e DELETE. Ela é basicamente uma API de CRUD de Filme, e não só dele, de outras entidades que o compõem. Dentre as funcionalidades da API, temos:
+                        <ul>
+                            <li>Listar todos os dados</li>
+                            <li>Buscar um filme, ou outra entidade, por ID</li>
+                            <li>Inserir um filme ou outra entidade</li>
+                            <li>Atualizar um filme ou outra entidade</li>
+                            <li>Deletar um filme ou outra entidade</li>
+                        </ul>
+                    </p>
                     <div>
-                        <span>HTML</span>
-                        <span>CSS</span>
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>Prisma</span>
+                        <span>MySQL</span>
+                        <span>SQL</span>
                     </div>
                 </a>
-                <a href="https://github.com/Leonardo-Scotti/nike-foreach" class="project">
-                    <h3>Nike</h3>
-                    <p>Projeto em PHP, com inspiração no site da Nike. Utilizando foreach para mostrar produtos e também exibindo sua página de detalhe.</p>
+                <a href="https://github.com/leonardo-scotti/pend1-api_animes" class="project" target="_blank">
+                    <h3>Site de Consumo de API pública - JavaScript</h3>
+                    <p>Esse projeto Front-end foi desenvolvido em HTML, CSS e JavaScript. Consome a API pública de Animes Jikan. Dentre as funcionalidades presentes no projeto, temos:
+                        <ul>
+                            <li>Exibe os animes mais vistos/populares</li>
+                            <li>Permite que seja feita a busca de um Anime pelo nome</li>
+                            <li>Permite que seja filtrado os animes baseados em seu gênero</li>
+                        </ul>
+                    </p>
                     <div>
-                        <span>PHP</span>
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
@@ -99,7 +123,14 @@
                 </a>
             </div>
         </section>
+        <section id="profissional" class="profissional fade-in">
+            <h2>Formações</h2>
+            <div class="container-professional">
+
+            </div>
+        </section>
         <section id="contato" class="contato fade-in">
+
         </section>
     </main>
     <footer>
