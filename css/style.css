@@ -356,8 +356,70 @@ main {
     border-radius: 1.25rem;
 }
 
+#profissional {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-professional {
+    width: 70%;
+    height: auto-fit;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.course {
+    flex-grow: 1;
+    height: auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: var(--10px);
+    transition: 0.3s;
+    text-align: justify;
+}
+
+.course:hover {
+    transform: translateY(-0.3125rem);
+}
+
+.course h3 {
+    color: #143b64;
+}
+
+.course p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.course ul {
+    margin-left: 20px;
+}
+
+.course li {
+    list-style: disc;
+}
+
+.course div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.course span {
+    background-color: #ed8936;
+    color: #fafafa;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    border-radius: 1.25rem;
+}
+
 #projetos,
-#skills {
+#skills,
+#profissional {
     margin: var(--100px) 0;
 }
 
